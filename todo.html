@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="todo.js"></script>
+    <link rel="stylesheet" href="styles1.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <header>
+        <img src="download.png">
+        <h1><i>TODOIST</i></h1>
+    </header>
+    <main>
+        <div class="task-form">
+            <h2>Add New Task</h2>
+            <input type="text" id="task-input" placeholder="Enter task">
+            <input type="date" id="due-date" placeholder="Due date">
+            <select id="category-select">
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+                <option value="shopping">Shopping</option>
+            </select>
+            <select id="priority-select">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button id="add-task-btn">Add Task</button>
+        </div>
+        <div class="task-list">
+            <div class="task-list-1"><b>Task List</b>
+            <div class="task-list-2">
+                <div class="icon"></div>
+                <input type="text" placeholder="Search" id="searchBar">
+        </div>
+            
+            <div class="sort-buttons">
+                <button id="sort-by-due-date">Sort by Due Date</button>
+                <button id="sort-by-priority">Sort by Priority</button>
+                <button id="sort-by-category">Sort by Category</button>
+            </div>
+            <div class="task-filter">
+                <button id="show-uncompleted-btn">Uncompleted Tasks</button>
+                <button id="show-completed-btn">Completed Tasks</button>
+            </div>
+            
+            <ul id="task-list">
+
+            </ul>
+            
+        </div>
+    </main>
+</body>
+</html>
